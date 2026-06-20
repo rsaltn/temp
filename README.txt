@@ -1,15 +1,12 @@
-aihome static prototype
+AiHome static landing page
 
-Files:
-- index.html — structure of the landing page
-- styles.css — full responsive visual design
-- script.js — mobile menu, scroll reveal, country tabs, form demo
+Откройте index.html в браузере.
+Файлы:
+- index.html
+- styles.css
+- script.js
+- assets/aihome-logo-full.png
+- assets/aihome-logo-wide.png
+- assets/aihome-logo-mark.png
 
-How to run:
-1. Open index.html in any browser.
-2. No build step, no external libraries, no internet required.
-
-Recommended next integrations:
-- Replace demo form with WhatsApp / Telegram / CRM integration.
-- Add real contacts, city, legal name, partner disclaimers.
-- Add real photos or renders if available.
+В этой версии обновлены логотип, шрифты, написание AiHome, international-фото и мобильная адаптация hero-блока.

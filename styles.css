@@ -1148,60 +1148,6 @@ svg {
   align-self: center;
 }
 
-.contact-form {
-  position: relative;
-  z-index: 1;
-  display: grid;
-  gap: 14px;
-  padding: 24px;
-  border: 1px solid rgba(24, 21, 18, 0.08);
-  border-radius: 32px;
-  background: rgba(255, 255, 255, 0.54);
-}
-
-.contact-form label {
-  display: grid;
-  gap: 8px;
-}
-
-.contact-form span {
-  color: rgba(24, 21, 18, 0.68);
-  font-size: 0.9rem;
-  font-weight: 820;
-}
-
-.contact-form input,
-.contact-form select,
-.contact-form textarea {
-  width: 100%;
-  border: 1px solid rgba(24, 21, 18, 0.1);
-  border-radius: 18px;
-  outline: none;
-  color: var(--ink);
-  background: rgba(255, 250, 243, 0.82);
-  padding: 15px 16px;
-  transition: border-color 0.18s ease, box-shadow 0.18s ease, background 0.18s ease;
-}
-
-.contact-form input:focus,
-.contact-form select:focus,
-.contact-form textarea:focus {
-  border-color: rgba(159, 106, 56, 0.42);
-  box-shadow: 0 0 0 5px rgba(159, 106, 56, 0.11);
-  background: #fffaf3;
-}
-
-.contact-form textarea {
-  resize: vertical;
-}
-
-.form-status {
-  min-height: 22px;
-  margin: 0;
-  color: #547348;
-  font-weight: 850;
-}
-
 .footer {
   padding: 26px 0 40px;
 }
@@ -1514,8 +1460,7 @@ svg {
   }
 
   .advantage-panel,
-  .contact-copy,
-  .contact-form {
+  .contact-copy {
     padding: 22px;
   }
 
@@ -1663,7 +1608,7 @@ svg {
   width: 18px;
   height: 18px;
   border-radius: 7px;
-  background: url("assets/aihome-logo-mark.png") center / 150% auto no-repeat, linear-gradient(135deg, #fffaf3, #e7b46a);
+  background: url("assets/aihome-icon.svg") center / 72% 72% no-repeat, linear-gradient(135deg, #fffaf3, #e7b46a);
   box-shadow: inset 0 0 0 1px rgba(255,255,255,.25);
 }
 
@@ -2048,5 +1993,329 @@ svg {
 
   .country-visual {
     min-height: 208px;
+  }
+}
+
+/* Requested UI adjustments */
+.brand {
+  gap: 8px;
+}
+
+.brand-mark {
+  width: 38px;
+  height: 38px;
+  border-radius: 14px;
+  background: linear-gradient(145deg, #fffaf3, #f0e4d5);
+  box-shadow: 0 10px 24px rgba(159, 106, 56, 0.18), inset 0 0 0 1px rgba(255, 255, 255, 0.85);
+}
+
+.brand-mark img {
+  width: 76%;
+  height: 76%;
+  object-fit: contain;
+  object-position: center;
+  filter: none;
+}
+
+.brand-text {
+  font-size: 1.08rem;
+  letter-spacing: -0.05em;
+}
+
+.hero-logo-chip {
+  width: min(252px, 72vw);
+  margin-top: 16px;
+  padding: 7px;
+  border-radius: 24px;
+}
+
+.hero-logo-chip img {
+  border-radius: 18px;
+}
+
+.mini-brand span::before {
+  background:
+    url("assets/aihome-icon.svg") center / 72% 72% no-repeat,
+    linear-gradient(135deg, #fffaf3, #e7b46a);
+}
+
+.country-visual {
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+}
+
+.country-visual::before {
+  inset: 0;
+  width: auto;
+  height: auto;
+  border-radius: 0;
+  background:
+    linear-gradient(112deg, rgba(20, 16, 12, 0.16), rgba(20, 16, 12, 0.04) 48%, rgba(231, 180, 106, 0.08)),
+    radial-gradient(circle at 20% 18%, rgba(255, 250, 243, 0.16), transparent 24%);
+}
+
+.country-visual::after {
+  display: none;
+}
+
+.country-visual.uae {
+  background-image: url("https://images.unsplash.com/photo-1512453979798-5ea266f8880c?auto=format&fit=crop&w=2200&q=90");
+  background-position: center 76%;
+}
+
+.country-visual.turkey {
+  background-image: url("https://images.unsplash.com/photo-1524231757912-21f4fe3a7200?auto=format&fit=crop&w=2200&q=90");
+  background-position: center 62%;
+}
+
+.country-visual.thailand {
+  background-image: url("https://images.unsplash.com/photo-1528181304800-259b08848526?auto=format&fit=crop&w=2200&q=90");
+  background-position: center 58%;
+}
+
+.country-visual.spain {
+  background-image: url("https://images.unsplash.com/photo-1583422409516-2895a77efded?auto=format&fit=crop&w=2200&q=90");
+  background-position: center 56%;
+}
+
+.country-visual.georgia {
+  background-image: url("https://images.unsplash.com/photo-1565008576549-57569a49371d?auto=format&fit=crop&w=2200&q=90");
+  background-position: center 54%;
+}
+
+.contact-copy {
+  display: grid;
+  gap: 22px;
+  align-self: start;
+}
+
+.contact-copy h2 {
+  max-width: 11ch;
+  margin-bottom: 0;
+}
+
+.contact-copy p {
+  max-width: 30rem;
+}
+
+.contact-summary {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+}
+
+.contact-summary span {
+  padding: 10px 14px;
+  border: 1px solid rgba(24, 21, 18, 0.09);
+  border-radius: 999px;
+  color: rgba(24, 21, 18, 0.72);
+  background: rgba(255, 255, 255, 0.48);
+  font-size: 0.9rem;
+  font-weight: 800;
+}
+
+.contact-showcase {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 16px;
+}
+
+.contact-card {
+  position: relative;
+  overflow: hidden;
+  display: grid;
+  align-content: start;
+  gap: 20px;
+  min-height: 236px;
+  padding: 24px;
+  border: 1px solid rgba(255, 255, 255, 0.62);
+  border-radius: 32px;
+  color: #fffaf3;
+  background:
+    radial-gradient(circle at 0% 0%, rgba(255, 255, 255, 0.2), transparent 34%),
+    linear-gradient(145deg, #1c1712, #6e4728 62%, #d7a25a);
+  box-shadow: 0 22px 56px rgba(58, 42, 25, 0.16);
+  transition: transform 0.24s ease, box-shadow 0.24s ease, border-color 0.24s ease;
+}
+
+.contact-card::before {
+  content: "";
+  position: absolute;
+  inset: auto -40px -40px auto;
+  width: 180px;
+  height: 180px;
+  border-radius: 999px;
+  background: rgba(255, 255, 255, 0.08);
+}
+
+.contact-card:hover {
+  transform: translateY(-4px);
+  border-color: rgba(255, 255, 255, 0.8);
+  box-shadow: 0 28px 62px rgba(58, 42, 25, 0.2);
+}
+
+.contact-card-featured {
+  grid-column: 1 / -1;
+  grid-template-columns: auto 1fr auto;
+  align-items: center;
+  min-height: 184px;
+}
+
+.contact-card-icon {
+  position: relative;
+  z-index: 1;
+  width: 68px;
+  height: 68px;
+  display: grid;
+  place-items: center;
+  border-radius: 22px;
+  background: rgba(255, 255, 255, 0.12);
+  box-shadow: inset 0 0 0 1px rgba(255, 255, 255, 0.16);
+}
+
+.contact-card-icon img {
+  width: 32px;
+  height: 32px;
+  display: block;
+}
+
+.contact-card-copy {
+  position: relative;
+  z-index: 1;
+  display: grid;
+  gap: 5px;
+}
+
+.contact-card-copy small {
+  color: rgba(255, 250, 243, 0.68);
+  font-size: 0.8rem;
+  font-weight: 800;
+  text-transform: uppercase;
+  letter-spacing: 0.12em;
+}
+
+.contact-card-copy strong {
+  font-size: 1.52rem;
+  line-height: 1;
+  letter-spacing: -0.04em;
+}
+
+.contact-card-copy em {
+  max-width: 34ch;
+  color: rgba(255, 250, 243, 0.8);
+  font-style: normal;
+  font-size: 0.95rem;
+  line-height: 1.55;
+}
+
+.contact-card-action {
+  position: relative;
+  z-index: 1;
+  align-self: end;
+  justify-self: start;
+  padding: 11px 15px;
+  border-radius: 999px;
+  color: #fffaf3;
+  background: rgba(255, 255, 255, 0.1);
+  box-shadow: inset 0 0 0 1px rgba(255, 255, 255, 0.14);
+  font-size: 0.88rem;
+  font-weight: 900;
+  letter-spacing: -0.02em;
+}
+
+.contact-card-featured .contact-card-action {
+  justify-self: end;
+}
+
+.contact-card.whatsapp {
+  background:
+    radial-gradient(circle at 0% 0%, rgba(255, 255, 255, 0.24), transparent 32%),
+    linear-gradient(145deg, #102216, #1f6a3b 58%, #56be7a);
+}
+
+.contact-card.instagram {
+  background:
+    radial-gradient(circle at 0% 0%, rgba(255, 255, 255, 0.22), transparent 32%),
+    linear-gradient(145deg, #30111d, #9a2f67 56%, #f1a24d);
+}
+
+.contact-card.telegram {
+  background:
+    radial-gradient(circle at 0% 0%, rgba(255, 255, 255, 0.22), transparent 32%),
+    linear-gradient(145deg, #132a3e, #2b6b97 58%, #68b9ea);
+}
+
+@media (max-width: 760px) {
+  .brand-mark {
+    width: 34px;
+    height: 34px;
+    border-radius: 13px;
+  }
+
+  .brand-text {
+    font-size: 0.98rem;
+  }
+
+  .hero-logo-chip {
+    width: min(204px, 62vw);
+    padding: 6px;
+    border-radius: 21px;
+  }
+
+  .hero-logo-chip img {
+    border-radius: 16px;
+  }
+
+  .contact-copy {
+    gap: 18px;
+  }
+
+  .contact-copy h2 {
+    max-width: 12ch;
+  }
+
+  .contact-summary span {
+    font-size: 0.82rem;
+  }
+
+  .contact-showcase {
+    grid-template-columns: 1fr;
+  }
+
+  .contact-card,
+  .contact-card-featured {
+    grid-column: auto;
+    grid-template-columns: 1fr;
+    min-height: auto;
+    padding: 20px;
+    gap: 16px;
+    border-radius: 26px;
+  }
+
+  .contact-card-icon {
+    width: 58px;
+    height: 58px;
+    border-radius: 19px;
+  }
+
+  .contact-card-icon img {
+    width: 28px;
+    height: 28px;
+  }
+
+  .contact-card-copy strong {
+    font-size: 1.28rem;
+  }
+
+  .contact-card-copy em {
+    max-width: none;
+    font-size: 0.9rem;
+    line-height: 1.48;
+  }
+
+  .contact-card-action,
+  .contact-card-featured .contact-card-action {
+    justify-self: start;
   }
 }

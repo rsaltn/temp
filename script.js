@@ -6,8 +6,6 @@ const revealItems = document.querySelectorAll('.reveal');
 const tiltItems = document.querySelectorAll('.tilt');
 const countryTabs = document.querySelectorAll('[data-country]');
 const countryCards = document.querySelectorAll('[data-country-card]');
-const form = document.querySelector('[data-form]');
-const statusText = document.querySelector('[data-status]');
 
 const setHeaderState = () => {
   header.classList.toggle('scrolled', window.scrollY > 24);
@@ -77,14 +75,4 @@ countryTabs.forEach((tab) => {
       card.classList.toggle('active', card.dataset.countryCard === country);
     });
   });
-});
-
-form.addEventListener('submit', (event) => {
-  event.preventDefault();
-  const data = new FormData(form);
-  const name = data.get('name')?.toString().trim() || 'Клиент';
-  const service = data.get('service')?.toString() || 'выбранное направление';
-
-  statusText.textContent = `${name}, заявка по направлению «${service}» визуально принята. Здесь можно подключить WhatsApp или CRM.`;
-  form.reset();
 });

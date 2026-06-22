@@ -1,0 +1,18 @@
+<svg width="64" height="64" viewBox="0 0 64 64" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <linearGradient id="roof" x1="12" y1="12" x2="52" y2="52" gradientUnits="userSpaceOnUse">
+      <stop stop-color="#2E2014"/>
+      <stop offset="0.52" stop-color="#9F6A38"/>
+      <stop offset="1" stop-color="#E7B46A"/>
+    </linearGradient>
+    <linearGradient id="walls" x1="18" y1="20" x2="46" y2="54" gradientUnits="userSpaceOnUse">
+      <stop stop-color="#F6D8A6"/>
+      <stop offset="0.55" stop-color="#D59A4E"/>
+      <stop offset="1" stop-color="#7D512D"/>
+    </linearGradient>
+  </defs>
+  <path d="M10 32L32 12L54 32" stroke="url(#roof)" stroke-width="5" stroke-linecap="round" stroke-linejoin="round"/>
+  <path d="M20 30V52H44V30" stroke="url(#walls)" stroke-width="5" stroke-linecap="round" stroke-linejoin="round"/>
+  <path d="M28 52V39H36V52" stroke="url(#roof)" stroke-width="4.5" stroke-linecap="round" stroke-linejoin="round"/>
+  <path d="M23 37H41" stroke="url(#roof)" stroke-width="4.5" stroke-linecap="round"/>
+</svg>

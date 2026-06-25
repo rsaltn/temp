@@ -737,6 +737,15 @@ svg {
     linear-gradient(145deg, #2b2119, #7b4f2b 60%, #d3a15e);
 }
 
+.service-card.wide-card {
+  grid-column: 1 / -1;
+  min-height: 212px;
+}
+
+.service-card.wide-card p {
+  max-width: 60ch;
+}
+
 .service-card.featured p,
 .service-card.featured span {
   color: rgba(255, 250, 244, 0.74);
@@ -2462,6 +2471,10 @@ svg {
     padding: 18px;
   }
 
+  .service-card.wide-card {
+    min-height: 188px;
+  }
+
   .service-card h3 {
     margin: 18px 0 8px;
     font-size: 1.14rem;
@@ -2701,6 +2714,10 @@ svg {
 
   .service-card {
     min-height: 184px;
+  }
+
+  .service-card.wide-card {
+    min-height: 172px;
   }
 
   .country-stage {
